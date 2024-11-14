@@ -3,6 +3,7 @@ package pageObjects;
 import java.time.Duration;
 
 import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -61,8 +62,11 @@ public class RegistrationPage extends BasePage {
 	
 	public void Click_Enable() throws InterruptedException
 	{
-		Thread.sleep(3000);
 		try {
+			Thread.sleep(3000);
+			JavascriptExecutor js=(JavascriptExecutor) driver;
+			//js.executeScript("window.scrollBy(0,300)");
+			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			chk_TermsAgree.click();
         } catch (ElementClickInterceptedException e) {
             
