@@ -22,7 +22,10 @@ public class TC001_Registrationtest extends BaseTest{
 		reg.setFirstName(getRandomAlphabetic());
 		reg.setLastName(getRandomAlphabetic());
 		reg.setEmail(getalphanumberic()+"@xyx.com");
-		reg.setPassword(getalphanumberic());
+		reg.setPhoneno(getRandomNumeric());
+		String password=getalphanumberic();
+		reg.setPassword(password);
+		reg.SetConfirmPwd(password);
 		reg.Click_Enable();
 		reg.Click_Submit();	
 		

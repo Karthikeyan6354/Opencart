@@ -31,14 +31,20 @@ public class RegistrationPage extends BasePage {
 	@FindBy (xpath="//input[@id='input-password']")
 	WebElement txt_Password;
 	
-	@FindBy (xpath="//input[@name='agree']")
-	WebElement chk_TermsAgree;
+	@FindBy (xpath="//input[@id='input-confirm']")
+	WebElement txt_cnfrmpwd;
 	
-	@FindBy (xpath="//button[@type='submit']")
+	@FindBy (xpath="//input[@name='agree']") 
+	WebElement chk_TermsAgree;  
+	
+	@FindBy (xpath="//input[@value='Continue']") 
 	WebElement btn_Submit;
 	
 	@FindBy (xpath="//h1[normalize-space()='Your Account Has Been Created!']")
 	WebElement msg_account_Success;
+	
+	@FindBy (id="input-telephone")
+	WebElement txt_phone;
 	
 	public void setFirstName(String firstname)
 	{
@@ -60,13 +66,21 @@ public class RegistrationPage extends BasePage {
 		txt_Password.sendKeys(pwd);
 	}
 	
+	public void setPhoneno(String P_number)
+	{
+		txt_phone.sendKeys(P_number);	}
+	
+	public void SetConfirmPwd(String pwd) {
+		txt_cnfrmpwd.sendKeys(pwd);
+	}
+		
+	
+	
 	public void Click_Enable() throws InterruptedException
 	{
 		try {
 			Thread.sleep(3000);
-			JavascriptExecutor js=(JavascriptExecutor) driver;
-			//js.executeScript("window.scrollBy(0,300)");
-			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			
 			chk_TermsAgree.click();
         } catch (ElementClickInterceptedException e) {
             
@@ -78,8 +92,6 @@ public class RegistrationPage extends BasePage {
 	}
 	
 		
-
-	
 	public void Click_Submit()
 	{
 		btn_Submit.click();

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T14:35:53 IST" name="Suite" finished-at="2024-11-14T14:36:01 IST" duration-ms="7707">
+  <suite started-at="2024-11-15T13:53:35 IST" name="Suite" finished-at="2024-11-15T13:53:47 IST" duration-ms="12032">
     <groups>
       <group name="Master">
-        <method signature="TC001_Registrationtest.testRegistration()[pri:0, instance:testCases.TC001_Registrationtest@727eb8cb]" name="testRegistration" class="testCases.TC001_Registrationtest"/>
+        <method signature="TC001_Registrationtest.testRegistration()[pri:0, instance:testCases.TC001_Registrationtest@563e4951]" name="testRegistration" class="testCases.TC001_Registrationtest"/>
       </group> <!-- Master -->
       <group name="Sanity">
-        <method signature="TC001_Registrationtest.testRegistration()[pri:0, instance:testCases.TC001_Registrationtest@727eb8cb]" name="testRegistration" class="testCases.TC001_Registrationtest"/>
+        <method signature="TC001_Registrationtest.testRegistration()[pri:0, instance:testCases.TC001_Registrationtest@563e4951]" name="testRegistration" class="testCases.TC001_Registrationtest"/>
       </group> <!-- Sanity -->
     </groups>
-    <test started-at="2024-11-14T14:35:53 IST" name="Test" finished-at="2024-11-14T14:36:01 IST" duration-ms="7707">
+    <test started-at="2024-11-15T13:53:35 IST" name="Test" finished-at="2024-11-15T13:53:47 IST" duration-ms="12032">
       <class name="testCases.TC001_Registrationtest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_Registrationtest@727eb8cb]" started-at="2024-11-14T14:35:53 IST" name="setup" finished-at="2024-11-14T14:35:57 IST" duration-ms="3390" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_Registrationtest@563e4951]" started-at="2024-11-15T13:53:36 IST" name="setup" finished-at="2024-11-15T13:53:41 IST" duration-ms="5386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,48 +29,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRegistration()[pri:0, instance:testCases.TC001_Registrationtest@727eb8cb]" started-at="2024-11-14T14:35:57 IST" name="testRegistration" finished-at="2024-11-14T14:36:00 IST" duration-ms="3650" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "js" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "js" is null
-at pageObjects.RegistrationPage.Click_Enable(RegistrationPage.java:69)
-at testCases.TC001_Registrationtest.testRegistration(TC001_Registrationtest.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="testRegistration()[pri:0, instance:testCases.TC001_Registrationtest@563e4951]" started-at="2024-11-15T13:53:41 IST" name="testRegistration" finished-at="2024-11-15T13:53:47 IST" duration-ms="5747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistration -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_Registrationtest@727eb8cb]" started-at="2024-11-14T14:36:01 IST" name="teardown" finished-at="2024-11-14T14:36:01 IST" duration-ms="309" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_Registrationtest@563e4951]" started-at="2024-11-15T13:53:47 IST" name="teardown" finished-at="2024-11-15T13:53:47 IST" duration-ms="608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
