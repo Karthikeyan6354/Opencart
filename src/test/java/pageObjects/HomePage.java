@@ -20,7 +20,8 @@ public class HomePage extends BasePage{
 	@FindBy(xpath="//a[normalize-space()='Register']")
 	WebElement link_Register;
 	
-	@FindBy (xpath="//a[@class='dropdown-item'][normalize-space()='Login']")
+	@FindBy (xpath="//ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Login']")
+	
 	WebElement link_login;
 	
 	public void click_Account()
